@@ -48,15 +48,15 @@ public class JLIst1 {
             }   else{
                     bt.setText(""+value.hashCode());
                     
-        }       if(isSelected){
+            }   if(isSelected){
                     bt.setOpaque(true);
                     bt.setBackground(Color.red);
-        }
+            }
                 return bt;
-        }
+            }
         //////////////////////////////////////////
-                });
-        
+            });
+            frame.add(list);
         frame.setVisible(true);
     }
     
