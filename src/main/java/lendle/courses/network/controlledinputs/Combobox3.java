@@ -68,6 +68,13 @@ public class Combobox3 extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
         String value=(String) jComboBox1.getSelectedItem();
+        for(int i=0;i<jComboBox2.getItemCount();i++){
+            String value2 = jComboBox2.getItemAt(i);
+            if(value2.startsWith(value)){
+                jComboBox2.setSelectedIndex(i);
+                break;
+            }
+        }
         //select the corresponding value if jComboBox2
         
         ///////////////////////////////////////////////

@@ -44,10 +44,11 @@ public class NewJFrame2 extends javax.swing.JFrame {
 
         jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "List" }));
+        jComboBox1.setToolTipText("List");
         jPanel1.add(jComboBox1);
 
-        jButton2.setText("jButton2");
+        jButton2.setText("Button");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
