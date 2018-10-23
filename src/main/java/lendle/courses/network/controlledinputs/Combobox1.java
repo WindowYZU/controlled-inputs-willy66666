@@ -28,6 +28,11 @@ public class Combobox1 {
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setLayout(new FlowLayout());
         //create JComboBox and add 0~99 to the combobox
+        JComboBox<String> combobox = new JComboBox<String>();
+        for(int i=0; i<=99;i++){
+              combobox.addItem(""+i);
+        }
+        frame.add(combobox);
         
         ///////////////////////////////////////////////
         
