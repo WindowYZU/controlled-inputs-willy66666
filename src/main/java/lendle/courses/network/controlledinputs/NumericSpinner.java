@@ -35,7 +35,7 @@ public class NumericSpinner {
         model.setMaximum(10000);
         model.setMinimum(0);
         model.setValue(50);
-        model.setStepSize(10);
+        model.setStepSize(10);//不打=預設
         spinner.setModel(model);
         ///////////////////////////////////////////////////
         spinner.setPreferredSize(new Dimension(60, 20));
