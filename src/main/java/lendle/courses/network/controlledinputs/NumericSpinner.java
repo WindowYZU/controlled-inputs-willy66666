@@ -8,9 +8,11 @@ package lendle.courses.network.controlledinputs;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.util.Calendar;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JSpinner;
+import javax.swing.SpinnerDateModel;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.WindowConstants;
 
@@ -36,7 +38,11 @@ public class NumericSpinner {
         model.setMinimum(0);
         model.setValue(50);
         model.setStepSize(10);//不打=預設
+        
+        SpinnerDateModel model = new SpinnerDateModel();
+        model.setCalendarField(Calendar.DATE);
         spinner.setModel(model);
+        
         ///////////////////////////////////////////////////
         spinner.setPreferredSize(new Dimension(60, 20));
         frame.add(spinner);
